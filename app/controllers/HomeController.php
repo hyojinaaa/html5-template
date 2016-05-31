@@ -16,10 +16,16 @@ class HomeController extends PageController {
 
 		// Get latest products
 
+
 	}
 
 	public function buildHTML() {
-		echo $this->title;
+		
+		include 'app/templates/header.php';
+
+		include 'app/templates/home/home.php';
+
+		include 'app/templates/footer.php';
 	}
 
 }
